@@ -17,10 +17,6 @@ public class TicketService {
 	private TicketDao ticketDao;
 	
 	
-	//public void saveTicketDetails(List<Ticket> tickets) {
-	//	ticketDao.saveAll(tickets);
-	//}
-	
 	public  Ticket getTicketDetails(int id) {
 	  System.out.println("id : "+id);
 	   Ticket ticket = ticketDao.findById(id).get(); //select * from ticket where id=101
